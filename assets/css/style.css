@@ -1,0 +1,635 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+
+/* globla css */
+:root{
+    --primary-font-family: "Inter", sans-serif;
+    --primary-color:Black;
+    --secondary-color:#222222;
+    --third-color:#E6533C;
+}
+body{
+    font-family: var(--primary-font-family);
+    margin: 0px;
+    padding: 0px;
+    background-color: black;
+}
+h1{
+    color: white;
+    font-size: 80px;
+}
+h2{
+    font-size: 42px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+h4{
+
+}
+h5{
+    color: white;
+    font-size: 22px;
+}
+h6{
+    font-size: 16px;
+    color: white;
+    padding: 0px;
+    margin: 0px;
+}
+p {
+    color: #7b7b7b;
+    font-weight: 400;
+    margin: 0px;
+}
+button{
+    font-family:var(--primary-font-family) ;
+    border-radius: 50px;
+    font-size: 16px;
+    padding: 10px 28px;
+    border: none;
+    color: white;
+}
+input,select{
+    background:#383838;
+    padding: 13px 20px;
+    border-radius: 11px;
+    outline: none;
+    border: none;
+    color: #afafaf;
+    font-weight: 500;
+    font-size: 18px;
+    width: calc(48% - 42px);
+    margin: 8px 5px;
+}
+select{
+    width: 48%;
+    color:#afafaf ;
+}
+/* global classes */
+.dNone{
+    display: none;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+.primaryBtn{
+    background-color:var(--third-color) ;
+}
+.secondaryBtn{
+    background-color: transparent;
+    border: 1px solid white;
+}
+
+.d-flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+.bg-dark{
+    background-color: #000;
+}
+.section_header{
+    margin: 40px 0px;    width: 50%;
+    margin: auto;
+    text-align: center;
+
+}
+
+
+
+
+/* header */
+.hamburger{
+    display: none;
+}
+.bg-dark{
+    background: linear-gradient(to bottom, #000000, #444444, #000000);
+}
+header{
+    justify-content: space-between;
+    padding: 30px 0px;
+}
+.menu ul{
+    border: 2px solid #3d3d3d8f;
+    border-radius: 50px;
+    padding: 1px 0px;
+
+}
+.menu > ul li{
+    display: flex;
+    margin: 0px 1px;
+    font-family: var(--primary-font-family);
+    font-size: 18px;
+    color: white;
+    padding: 9px 35px;
+    border-radius: 100px;
+    transition: .5s all ease-in-out;
+}
+.menu > ul li:hover{
+    background: var(--third-color);
+    cursor: pointer;
+
+}
+/* banner */
+.banner{
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+}
+.left{
+    width: 50%;
+}
+.banner h1{
+    margin: 0px;
+}
+.banner p{
+    margin: 30px 0px 60px;
+}
+.miama_text{
+    font-family: 'Miama', sans-serif;
+    font-size: 120px;
+    font-weight: 400;
+}
+.tutorial{
+    justify-content: center;
+    align-items: center;
+    background: rgb(28 28 28 / 30%);
+    backdrop-filter: blur(10px);
+    border: 2px solid #5a5a5a6b;
+    padding: 14px 22px;
+    border-radius: 15px;
+    position: absolute;
+}
+.circle{
+    height: 30px;
+    width: 30px;
+    background:#E6533C;
+    border-radius: 100px;
+    margin-right: 10px;
+
+}
+.tutorial span{
+    font-family: var(--primary-font-family);
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: #747474;
+}
+.tutorial h1{
+    font-size: 28px;
+}
+.tutorial_1{
+    right: 19%;
+    bottom: 12%;
+}
+.tutorial_2{
+    right: 0%;
+    top: 25%;
+}
+
+
+
+
+
+/* main */
+
+/* hero css */
+
+
+table {
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid #2d2d2d;
+    padding: 8px;
+    text-align: left;
+}
+th {
+    color: #e3e3e3;
+    font-weight: 500;
+    width: 40%;
+    padding: 10px 15px;
+    font-size: 16px;
+}
+
+/* BMI Calculator */
+table{
+    border: 2px solid #2d2d2d;
+}
+td{
+    color: #7f7f7f;
+    font-weight: 500;
+    padding: 10px 15px;
+    font-size: 14px;}
+/* Habit Item */
+.habit_item{
+    text-align: center;
+    margin-top: 60px;
+    flex-wrap: wrap;
+}
+
+.habit_item div{
+    width: calc(25% - 45px);
+    padding: 0px 20px;
+}
+.habit_item h6{
+    margin: 25px 0px 10px;
+}
+.habit_item img{
+    border-radius: 100%;
+    border: 5px solid #191919;;
+}
+/* Extra miles */
+.extra_miles{
+    background-color: #191919;
+    border-radius: 20px;
+    padding: 35px;
+    justify-content: space-between;
+    margin-top: 55px;
+}
+.miles_content{
+    width: 50%;
+}  
+.miles_content img{
+    width: 50%;
+}  
+.miles_content button{
+     margin-top: 20px;
+}
+/* Training & Excercise */
+.training .section_header{
+    text-align: left;
+    width: 100%;
+    margin: 40px 0px 20px;
+}
+.training_item{
+    display: flex;
+    flex-wrap: wrap;
+}
+.training_item > div{
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0px;
+    position:relative;
+
+}
+.training_item > div::before{
+    position:absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+.training_item > div > h6{
+    position: absolute;
+    font-weight: 400;
+}
+.training_item > div > h6:last-child{
+    display: none;
+}
+
+.t_item_1{
+    width: 25%;
+    background-image: url(../images/training_1.png);
+}
+.t_item_1::before{
+    background-color: #06ffd12d;
+}
+.t_item_1 > h6{
+    left: 20px;
+    bottom: 20px;
+}
+
+
+.t_item_2{
+    width: 50%;
+    background-image: url(../images/training_2.png);
+}
+.t_item_2::before{
+    background-color: #ff000047;
+}
+.t_item_2 > h6{
+    left: 20px;
+    top: 30px;
+}
+
+
+
+.t_item_3{
+    width: 25%;
+    background-image: url(../images/training_3.png);
+}
+.t_item_3::before{
+    background-color: #00000047;
+}
+.t_item_3 > h6{
+    left: 20px;
+    bottom: 30px;
+}
+
+
+.t_item_4{
+    width: 40%;
+    background-image: url(../images/training_4.png);
+}
+.t_item_4::before{
+    background-color: #00000047;
+}
+.t_item_4 > h6{
+    right: 20px;
+    top: 30px;
+}
+
+
+
+.t_item_5{
+    width: 25%;
+    background-image: url(../images/training_5.png);
+}
+.t_item_5::before{
+    background-color: #44ff004d;
+}
+.t_item_5 > h6{
+    left: 20px;
+    bottom: 30px;
+}
+
+.t_item_6{
+    width: 35%;
+    background-image: url(../images/training_6.png);
+}
+.t_item_6::before{
+    background-color: #0048ff42;
+}
+.t_item_6 > h6{
+    left: 20px;
+    bottom: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* BMI Info */
+.bmi .section_header{
+    text-align: left;
+    margin-top: 100px;
+}
+.bmi_info{
+    background-color: #191919;
+    padding: 30px 0px;
+    margin-top: 40px;
+}
+.table,.calculate{
+    width: 50%;
+}
+.calculate select:last-child{
+    width: calc(100% - 10px);
+}
+.calculate p{
+    margin: 15px 0px;
+}
+
+
+
+
+
+
+
+
+
+/* Meet Our Team */
+.meet_out_team 
+.meet_team_gallery{
+    background-color: #191919;
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 33%;
+    justify-content: center;
+}
+.meet_team_gallery > div{
+    justify-content: center;
+}
+.meet_team_gallery span{
+    font-weight: 400;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.626);
+}
+.team_box{
+    position: relative;
+    margin: 15px;
+}
+
+.team_info{
+    position: absolute;
+    bottom: 30px;
+    left: 25px;
+    transition: .5s;
+}
+.team_box:hover .team_info{
+    bottom: 35px;
+
+}
+/* footer */
+footer{
+    padding:40px 0px ;
+    margin-top: 20px;
+    background-color: #191919;
+}
+.footer_content {
+    display: flex;
+    flex-wrap: wrap; 
+    padding-top: 40px;
+}
+
+.footer_content div, .footer_right  div {
+    width: 50%;
+}
+.footer_left img{
+    width: 40%;
+}
+.footer_left p{
+    margin-top: 20px;
+    width: 90%;
+}
+
+
+
+footer ul {
+    padding: 0px;
+    
+}
+footer ul li{
+    list-style: none;
+    margin: 12px 0px;
+    color: #ffffff54;
+}
+.footer_down hr{
+    opacity: .5;
+    color: red;
+
+}
+.footer_down p{
+    text-align: center;
+    margin-top: 25px;
+}
+
+
+/* Media css */
+@media (max-width:576px) {
+    h2{
+        font-size: 32px;
+    }
+    h1{
+        font-size: 40px;
+    }
+    button{
+
+        font-size: 12px;
+        padding: 10px 25px;
+        display: inline-block;
+        margin-left: 10px;
+    }
+    input,select{
+        font-size: 14px;
+        width: calc(48% - 49px);
+        margin: 7px 4px;
+    }
+    select{
+        width: 47%;
+    }
+    .hamburger{
+        display: block;
+    }
+    .banner > div{
+        width: 100%;
+    }
+    .menu > ul{
+        display: none;
+    }
+    /* footer */
+    .footer_content div, .footer_right  div {
+        width: 100%;
+    }
+    .footer_left img{
+        width: 75%;
+    }
+    .footer_right h5{
+        margin: 40px 0px 10px;
+    }
+    .section_header{
+        width: 100%;
+        margin: 45px 0px 20px;
+    }
+    /* Banner */
+    .banner img{
+        width: 100%;
+        margin-top: 20px;
+    }
+    .banner > span{
+        font-size: 70px;
+    }
+    .tutorial{
+        height: 50px;
+        width: 130px!important;
+        padding: 10px 15px;
+    }
+    .tutorial h1{
+        font-size: 18px;
+    }
+    .tutorial span{
+        font-size: 11px;
+    }
+    .circle{
+        height: 20px;
+        width: 20px;
+    }
+    .tutorial_1{
+        right: 42%;
+     bottom: 4%;
+    }
+    .tutorial_2{
+        right: -14%;
+        top: 72%;
+    }
+
+    /* Habit Item */
+    .habit_item{
+        margin-top: 20px;
+    }
+    .habit_item > div{
+        margin-top: 50px;
+        width: 100%;
+    }
+    /* Miles */
+    .miles_content{
+        width: 100%;
+    }
+    .extra_miles img{
+        width: 100%;
+        margin-top: 40px;
+    }
+    
+
+    /* Training */
+    .t_item_3, .t_item_6{
+        display: none;
+    }
+    .training_item > div{
+        height: 100px!important;
+    }
+    .training_item > div > h6:first-child{
+        display: none;
+    }
+    .training_item > div > h6:last-child{
+        display: block;
+        font-size: 14px;
+        left: 10px;
+        bottom: 10px;
+    }
+    .t_item_1,.t_item_5{
+        width:55%;
+    }
+    .t_item_2{
+        background-position: right!important;
+    }
+    .t_item_2,.t_item_4{
+        width:45% ;
+    }
+
+
+
+
+
+
+
+    /* BMI */
+    .bmi .section_header{
+        margin: 80px 20px 0px;
+    }
+    .table, .calculate{
+        width: 100%;
+    }
+    .calculate select:last-child{
+        width: calc(97% - 10px);
+    }
+
+    /* Team */
+    .team_box img{
+        width: 100%;
+    }
+    
+    
+}
