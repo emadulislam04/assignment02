@@ -485,6 +485,29 @@ footer ul li{
     text-align: center;
     margin-top: 25px;
 }
+/* pricing */
+.segmentsItem{
+    border-radius: 5px;
+    border: 1px solid #322b7186;
+    padding: 0px;
+    transition: .5s all ease-in-out;
+    margin: 25px;
+}
+.segmentHeader{
+    background-color: aliceblue;
+    height: 200px;
+    text-align: center;
+    padding: 25px;
+    border-radius: 5px;
+
+}
+.segmentBody{
+    text-align: center;
+    padding: 25px;
+}
+.segmentsItem:hover{
+    box-shadow: 5px 0px 30px 7px #0000001f;
+}
 
 
 /* Media css */
@@ -630,6 +653,5 @@ footer ul li{
     .team_box img{
         width: 100%;
     }
-    
     
 }
