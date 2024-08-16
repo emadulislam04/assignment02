@@ -20,7 +20,7 @@ h1{
     font-size: 80px;
 }
 h2{
-    font-size: 42px;
+    font-size: 52px;
     color: white;
     margin-bottom: 10px;
 }
@@ -91,7 +91,8 @@ select{
     background-color: #000;
 }
 .section_header{
-    margin: 40px 0px;    width: 50%;
+    padding: 80px 0px 40px!important;
+    width: 50%;
     margin: auto;
     text-align: center;
 
@@ -144,6 +145,7 @@ header{
 }
 .banner h1{
     margin: 0px;
+    line-height: 100px;
 }
 .banner p{
     margin: 30px 0px 60px;
@@ -262,7 +264,6 @@ td{
 .training .section_header{
     text-align: left;
     width: 100%;
-    margin: 40px 0px 20px;
 }
 .training_item{
     display: flex;
@@ -385,11 +386,10 @@ td{
 /* BMI Info */
 .bmi .section_header{
     text-align: left;
-    margin-top: 100px;
 }
 .bmi_info{
     background-color: #191919;
-    padding: 30px 0px;
+    padding: 50px 0px;
     margin-top: 40px;
 }
 .table,.calculate{
@@ -400,6 +400,9 @@ td{
 }
 .calculate p{
     margin: 15px 0px;
+}
+.calculate button{
+    margin-top: 20px;
 }
 
 
@@ -442,6 +445,44 @@ td{
     bottom: 35px;
 
 }
+
+
+/* Membership */
+.pricing{
+    justify-content: space-between;
+    margin-bottom: 90px;
+}
+.pricing_item{
+    background-color: #222;
+    padding: 50px 35px;
+    border-radius: 10px;
+    width: calc(30% - 80px);
+    margin: 10px;
+}
+.pricing_item h4{
+    text-align: center;
+    background-color: #000;
+    border-radius: 50px;
+    padding: 10px 20px;
+    color: white;
+    width: 30%;
+    margin: auto;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+.pricing_item ul{
+    padding: 20px;
+}
+.pricing_item li{
+    color: #ffffff85;
+    font-weight: 400;
+    font-size: 16px;
+    margin: 12px 0px;
+}
+
+
+
+
 /* footer */
 footer{
     padding:40px 0px ;
@@ -542,6 +583,9 @@ footer ul li{
     .menu > ul{
         display: none;
     }
+    .container{
+        width: 90%;
+    }
     /* footer */
     .footer_content div, .footer_right  div {
         width: 100%;
@@ -631,27 +675,22 @@ footer ul li{
     .t_item_2,.t_item_4{
         width:45% ;
     }
-
-
-
-
-
-
-
     /* BMI */
-    .bmi .section_header{
-        margin: 80px 20px 0px;
-    }
+
     .table, .calculate{
         width: 100%;
     }
     .calculate select:last-child{
         width: calc(97% - 10px);
     }
-
     /* Team */
     .team_box img{
         width: 100%;
+    }
+    .pricing_item{
+        width: 100%;
+        margin: 10px 0px;
+        padding: 50px 20px;
     }
     
 }
