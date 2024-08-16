@@ -579,7 +579,7 @@ footer ul li{
         width: 47%;
     }
     .hamburger{
-        display: block;
+        display: block!important;
     }
     
     .menu > ul{
