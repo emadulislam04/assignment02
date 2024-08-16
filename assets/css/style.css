@@ -134,6 +134,9 @@ header{
 
 }
 /* banner */
+.headline{
+    line-height: 95px;
+}
 .banner{
     justify-content: space-between;
     align-items: center;
@@ -143,9 +146,8 @@ header{
 .left{
     width: 50%;
 }
-.banner h1{
+.banner > h1{
     margin: 0px;
-    line-height: 100px;
 }
 .banner p{
     margin: 30px 0px 60px;
@@ -181,6 +183,7 @@ header{
 }
 .tutorial h1{
     font-size: 28px;
+    margin: 0px;
 }
 .tutorial_1{
     right: 19%;
@@ -558,6 +561,7 @@ footer ul li{
     }
     h1{
         font-size: 40px;
+        
     }
     button{
 
@@ -577,9 +581,7 @@ footer ul li{
     .hamburger{
         display: block;
     }
-    .banner > div{
-        width: 100%;
-    }
+    
     .menu > ul{
         display: none;
     }
@@ -601,12 +603,21 @@ footer ul li{
         margin: 45px 0px 20px;
     }
     /* Banner */
+    .headline{
+        line-height: 55px;
+    }
+    .banner > div{
+        width: 100%;
+    }
     .banner img{
         width: 100%;
         margin-top: 20px;
     }
     .banner > span{
         font-size: 70px;
+    }
+    .miama_text{
+        font-size: 90px;
     }
     .tutorial{
         height: 50px;
@@ -628,8 +639,10 @@ footer ul li{
      bottom: 4%;
     }
     .tutorial_2{
-        right: -14%;
+        right: 2%;
         top: 72%;
+        display: flex;
+        align-items: center;
     }
 
     /* Habit Item */
@@ -643,6 +656,10 @@ footer ul li{
     /* Miles */
     .miles_content{
         width: 100%;
+    }
+    .extra_miles{
+        padding: 20px;
+        width: 80% !important;
     }
     .extra_miles img{
         width: 100%;
@@ -686,6 +703,9 @@ footer ul li{
     /* Team */
     .team_box img{
         width: 100%;
+    }
+    .pricing{
+        justify-content: center;
     }
     .pricing_item{
         width: 100%;
